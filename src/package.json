@@ -1,29 +1,32 @@
 {
-  "name": "ng2-pdfjs-viewer",
-  "version": "5.0.7",
+  "name": "ngx-pdf-viewer",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/intbot/ng2-pdfjs-viewer"
+    "url": "https://github.com/keshavkhatri/ngx-pdf-viewer"
   },
   "author": {
-    "name": "Code1",
-    "email": "codehippie1@gmail.com"
+    "name": "Keshav Khatri",
+    "email": "keshu88khatri@gmail.com"
   },
   "keywords": [
     "angular",
     "ng",
     "ng2",
+    "ngx",
     "pdfjs",
+    "pdf",
     "viewerjs",
+    "viewer",
     "viewer.html"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/intbot/ng2-pdfjs-viewer/issues"
+    "url": "https://github.com/keshavkhatri/ngx-pdf-viewer/issues"
   },
-  "main": "ng2-pdfjs-viewer.umd.js",
+  "main": "ngx-pdf-viewer.umd.js",
   "module": "index.js",
-  "typings": "ng2-pdfjs-viewer.d.ts",
+  "typings": "ngx-pdf-viewer.d.ts",
   "peerDependencies": {
     "@angular/core": "^8.0.0"
   }

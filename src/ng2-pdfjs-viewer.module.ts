@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PdfJsViewerComponent } from './ng2-pdfjs-viewer.component';
+import { PdfJsViewerComponent } from './ngx-pdf-viewer.component';
 
 @NgModule({
   imports: [CommonModule],
