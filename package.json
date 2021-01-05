@@ -1,6 +1,6 @@
 {
-  "name": "ng2-pdfjs-viewer",
-  "version": "1.0.0",
+  "name": "ngx-pdf-viewer",
+  "version": "0.0.1",
   "scripts": {
     "build": "gulp build",
     "build:watch": "gulp",
@@ -10,29 +10,30 @@
     "docs:watch": "npm run docs:build -- -s -w",
     "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
     "lite": "lite-server",
-    "playground:build": "tsc -p playground -w",
-    "playground": "concurrently \"npm run build:watch\" \"npm run playground:build\" \"npm run lite\"",
     "test": "tsc && karma start"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/intbot/ng2-pdfjs-viewer"
+    "url": "https://github.com/keshavkhatri/ngx-pdf-viewer"
   },
   "author": {
-    "name": "Code1",
-    "email": "codehippie1@gmail.com"
+    "name": "Keshav Khatri",
+    "email": "keshu88khatri@gmail.com"
   },
   "keywords": [
     "angular",
     "ng",
     "ng2",
+    "ngx",
     "pdfjs",
+    "pdf",
     "viewerjs",
+    "viewer",
     "viewer.html"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/intbot/ng2-pdfjs-viewer/issues"
+    "url": "https://github.com/keshavkhatri/ngx-pdf-viewer/issues"
   },
   "devDependencies": {
     "@angular/common": "^8.2.13",
