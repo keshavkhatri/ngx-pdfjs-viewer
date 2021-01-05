@@ -189,7 +189,7 @@ var PdfJsViewerComponent = /** @class */ (function () {
             this.viewerTab = window.open('', '_blank', this.externalWindowOptions || '');
             if (this.viewerTab == null) {
                 if (this.diagnosticLogs)
-                    console.error("ng2-pdfjs-viewer: For 'externalWindow = true'. i.e opening in new tab to work, pop-ups should be enabled.");
+                    console.error("ngx-pdf-viewer: For 'externalWindow = true'. i.e opening in new tab to work, pop-ups should be enabled.");
                 return;
             }
             if (this.showSpinner) {
@@ -353,8 +353,8 @@ var PdfJsViewerComponent = /** @class */ (function () {
     };
     PdfJsViewerComponent.decorators = [
         { type: Component, args: [{
-                    selector: 'ng2-pdfjs-viewer',
-                    template: "<iframe title=\"ng2-pdfjs-viewer\" [hidden]=\"externalWindow || (!externalWindow && !pdfSrc)\" #iframe width=\"100%\" height=\"100%\"></iframe>"
+                    selector: 'ngx-pdf-viewer',
+                    template: "<iframe title=\"ngx-pdf-viewer\" [hidden]=\"externalWindow || (!externalWindow && !pdfSrc)\" #iframe width=\"100%\" height=\"100%\"></iframe>"
                 },] },
     ];
     PdfJsViewerComponent.propDecorators = {
