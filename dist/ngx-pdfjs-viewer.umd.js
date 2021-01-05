@@ -1,7 +1,7 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common')) :
 	typeof define === 'function' && define.amd ? define(['exports', '@angular/core', '@angular/common'], factory) :
-	(factory((global['ngx-pdf-viewer'] = {}),global.core,global.common));
+	(factory((global['ngx-pdfjs-viewer'] = {}),global.core,global.common));
 }(this, (function (exports,core,common) { 'use strict';
 
 /**
@@ -192,7 +192,7 @@ var PdfJsViewerComponent = /** @class */ (function () {
             this.viewerTab = window.open('', '_blank', this.externalWindowOptions || '');
             if (this.viewerTab == null) {
                 if (this.diagnosticLogs)
-                    console.error("ngx-pdf-viewer: For 'externalWindow = true'. i.e opening in new tab to work, pop-ups should be enabled.");
+                    console.error("ngx-pdfjs-viewer: For 'externalWindow = true'. i.e opening in new tab to work, pop-ups should be enabled.");
                 return;
             }
             if (this.showSpinner) {
@@ -356,8 +356,8 @@ var PdfJsViewerComponent = /** @class */ (function () {
     };
     PdfJsViewerComponent.decorators = [
         { type: core.Component, args: [{
-                    selector: 'ngx-pdf-viewer',
-                    template: "<iframe title=\"ngx-pdf-viewer\" [hidden]=\"externalWindow || (!externalWindow && !pdfSrc)\" #iframe width=\"100%\" height=\"100%\"></iframe>"
+                    selector: 'ngx-pdfjs-viewer',
+                    template: "<iframe title=\"ngx-pdfjs-viewer\" [hidden]=\"externalWindow || (!externalWindow && !pdfSrc)\" #iframe width=\"100%\" height=\"100%\"></iframe>"
                 },] },
     ];
     PdfJsViewerComponent.propDecorators = {

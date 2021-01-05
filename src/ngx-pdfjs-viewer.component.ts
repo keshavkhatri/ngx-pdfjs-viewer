@@ -1,8 +1,8 @@
 import { Component, Input, Output, ViewChild, EventEmitter, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'ngx-pdf-viewer',
-  template: `<iframe title="ngx-pdf-viewer" [hidden]="externalWindow || (!externalWindow && !pdfSrc)" #iframe width="100%" height="100%"></iframe>`
+  selector: 'ngx-pdfjs-viewer',
+  template: `<iframe title="ngx-pdfjs-viewer" [hidden]="externalWindow || (!externalWindow && !pdfSrc)" #iframe width="100%" height="100%"></iframe>`
 })
 export class PdfJsViewerComponent {
   @ViewChild('iframe', {static: true}) iframe: ElementRef;
@@ -146,7 +146,7 @@ export class PdfJsViewerComponent {
     if (this.externalWindow && (typeof this.viewerTab === 'undefined' || this.viewerTab.closed)) {
       this.viewerTab = window.open('', '_blank', this.externalWindowOptions || '');
       if (this.viewerTab == null) {
-        if(this.diagnosticLogs) console.error("ngx-pdf-viewer: For 'externalWindow = true'. i.e opening in new tab to work, pop-ups should be enabled.");
+        if(this.diagnosticLogs) console.error("ngx-pdfjs-viewer: For 'externalWindow = true'. i.e opening in new tab to work, pop-ups should be enabled.");
         return;
       }
 

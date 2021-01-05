@@ -26,8 +26,8 @@
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
-    "flatModuleOutFile": "ngx-pdf-viewer.js",
-    "flatModuleId": "ngx-pdf-viewer",
+    "flatModuleOutFile": "ngx-pdfjs-viewer.js",
+    "flatModuleId": "ngx-pdfjs-viewer",
     "enableIvy": false
   },
   "files": [

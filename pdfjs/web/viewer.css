@@ -1304,11 +1304,13 @@ html[dir='rtl'] .toolbarButton.pageDown::before {
 }
 
 .toolbarButton.zoomOut::before {
-  content: url(images/toolbarButton-zoomOut.png);
+  content: url(images/toolbarButton-zoomOut@2x.png);
+  transform: scale(0.8);
 }
 
 .toolbarButton.zoomIn::before {
-  content: url(images/toolbarButton-zoomIn.png);
+  content: url(images/toolbarButton-zoomIn@2x.png);
+  transform: scale(0.8);
 }
 
 .toolbarButton.presentationMode::before,
